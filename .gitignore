@@ -34,6 +34,9 @@ bower_components
 .DS_Store
 Thumbs.db
 
+.cache
+.parcel-cache
+
 # Ignore built ts files
 dist/**/*
 dist
