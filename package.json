@@ -8,7 +8,7 @@
     "copy-assets": "ts-node tools/copyAssets",
     "tsc": "tsc",
     "parcel": "parcel build src/public/js/client.ts -d dist/public/js",
-    "build": "npm-run-all clean tsc copy-assets parcel",
+    "build": "npm-run-all clean tsc parcel copy-assets",
     "dev:start": "npm-run-all build start",
     "dev": "nodemon --watch src -e ts,ejs --exec npm run dev:start",
     "start": "node ."
@@ -17,8 +17,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@pixi/interaction": "^6.2.2",
     "ejs": "^3.1.6",
     "express": "^4.17.3",
+    "pixi.js": "^6.2.2",
     "socket.io": "^4.4.1",
     "socket.io-client": "^4.4.1",
     "ts-loader": "^9.2.6",

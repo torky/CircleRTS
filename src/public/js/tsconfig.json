@@ -11,6 +11,7 @@
         "module": "es6",
         "moduleResolution": "node",
         "outDir": "../../../dist/public/js",
-        "sourceMap": true
+        "sourceMap": true,
+        "esModuleInterop": true
     }
 }
